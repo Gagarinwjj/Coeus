@@ -161,13 +161,13 @@ class Manager:
         config.smali_path = os.path.join(config.decompile_path, "smali")
 
         if not os.path.exists(config.result_path):
-            os.mkdir(config.result_path, 0o777)
+            os.makedirs(config.result_path, 0o777)
 
         if not os.path.exists(config.temp_path):
-            os.mkdir(config.temp_path, 0o777)
+            os.makedirs(config.temp_path, 0o777)
 
         if not os.path.exists(config.decompile_path):
-            os.mkdir(config.decompile_path, 0o777)
+            os.makedirs(config.decompile_path, 0o777)
 
         if not os.path.exists(config.unzip_path):
             os.mkdir(config.unzip_path, 0o777)
